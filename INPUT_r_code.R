@@ -24,11 +24,12 @@ require("ggplot2")# install.packages(ggplot2)
 out_folder<-paste0(getwd(),"\\OUTPUT_")
 
 # read in raw file
-temp<-read.csv(file="INPUT_data.csv",check.names = FALSE,stringsAsFactors =TRUE , na.strings = c("N/A","#REF!","NA"," ","","-99") )  
+temp<-read.csv(file="INPUT_data.csv",check.names = FALSE,stringsAsFactors =TRUE)  
 temp_comp<-read.csv(file="INPUT_comparison.csv",check.names = FALSE,stringsAsFactors =TRUE)
 
 str(temp)
 x<-temp
+x$rep<-as.factor(x$rep)
 
 ###########################################################################################
 ##  ONE-STEP MODEL ESTIMATED
