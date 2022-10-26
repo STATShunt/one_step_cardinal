@@ -1,4 +1,4 @@
-This is the code and data to re-produce the results, tables and charts in Sarkar et al. (2022).
+This is the code and data to reproduce the results, tables and charts in Sarkar et al. (2022).
 
 The only requirements to reproduce the results are R (version 4.0 or later), with installed packages for tidyr and ggplot2 (needed for the charts).  
 

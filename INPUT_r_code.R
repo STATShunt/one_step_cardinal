@@ -137,7 +137,7 @@ foverall_predict_mu_ROSSO<-function(vec_in,Temp){
 }
 
 sim_max2<-optim(sim_max$par+x0*.05, foverall_optim_ROSSO, method = "BFGS",
-                control = list(maxit = 1000000,reltol=1e-16), hessian = TRUE)
+                control = list(maxit = 200000,reltol=1e-16), hessian = TRUE)
 
 
 fitted<-sim_max$par
@@ -416,7 +416,7 @@ for(i in 1:nsim){
   x0<-x0_initial
 
   sim_max<-optim(x0, foverall_optim_boot, method = "Nelder-Mead",
-                 control = list(maxit = 1000000,reltol=1e-16,gamma=1.5)
+                 control = list(maxit = 200000,reltol=1e-16,gamma=1.5)
                  ,lower = -Inf, upper = Inf, hessian = FALSE)
 
   out_sim[[i]]$ysim<-sim_all_plus_noise
