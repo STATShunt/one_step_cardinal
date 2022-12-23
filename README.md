@@ -6,6 +6,6 @@ You need to download the INPUT data files and the INPUT code script (either down
 
 You are welcome to take this code and apply it to your own data or extend it to your own models.  Please cite Sarkar et al. (2022) in any published research that follows from substantive use of the code or paper.
 
-The complete set of files in SCENARIO_ANALYSIS.zip is the same except that there is a more flexible loss function (see the final section of the Appendix in the paper that introduces the scenario analysis). 
+The complete set of files in the "scenario analysis" folder is the same except that there is a more flexible loss function (see the final section of the Appendix in the paper that introduces the scenario analysis). 
 
 Please contact Dipon Sarkar (dipon.sarkar "at" utas.edu.au) or Ian Hunt (ihunt "at" bunhill.co.uk) for any assistance with the code.
